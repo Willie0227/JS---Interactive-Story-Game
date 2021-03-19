@@ -1,17 +1,115 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Interactive Story Game</title>
 
+    <title>Journey Under the Ocean</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code|Ubuntu+Mono|VT323&display=swap" rel="stylesheet">
+
 </head>
 <body>
+<!--<iframe src="audio/Subnautica%20Main%20Theme.mp3" allow="autoplay" id="audio"></iframe>-->
+
+<div class="container">
+    <div class="title">Journey Under the Ocean</div>
+    <h2 class="sub-title">An adventurous and unpredictable journey....</h2>
+    <div id="test-area">
+
+        <div class="btn-container">
+
+            <div class="btn-group groupLore1">
+                <button class="btn btnStart" type="button" name="button" onclick="start()">Start Adventure</button>
+            </div>
+
+            <div class="btn-group groupLore2 invisible">
+                <button class="btn btnSwimAurora " type="button" name="button" onclick="SwimTowardAurora()">Swim Toward
+                    Aurora
+                </button>
+            </div>
+
+            <div class="btn-group groupLore3 invisible">
+                <button class="btn btnExploreOcean " type="button" name="button" onclick="start()">Explore the Ocean
+                </button>
+            </div>
+
+            <div class="btn-group groupLore4 invisible">
+                <button class="btn btnExploreOcean " type="button" name="button" onclick="KeepGoingOn()">Keep Going On
+                </button>
+            </div>
+
+        </div>
+
+        <h3 class="story-intro">
+
+            You are now on your spaceship, ready to land on the Kung-Planet88 and begins a exploration...
+            <br>
+            <br>
+            However, while landing, a crazy sci-fi laser artillery emerges out of no where and shot you down. Under the
+            emergency, you ride on the lifepod 5 ejected out from the exploding ship...
+            <br>
+            <br>
+            You fainted...
+            <br>
+            <br>
+            Fallen into the unknown...
+
+        </h3>
 
 
+        <h3 class="story-pg1 invisible">
+
+            You wake up and find out that all your communication system was destroyed during the explosion, however, the
+            water generator and aid kit were still working...
+            <br>
+            <br>
+            You suit up with the diving suit and climb out seeing what happen outside...
+            <br>
+            <br>
+            while you take look a around, you see your spaceship, "Aurora", burning and making eerie noise...
+            <br>
+            <br>
+            Now you have to choose whether you want to explore in the ocean swims toward your spaceship
+
+        </h3>
+
+        <div class="swimming ">
+            <img src="images/AbsoluteDimpledIrukandjijellyfish-max-14mb.gif" alt="" class="gif invisible">
+        </div>
+
+        <h3 class="story-pg2 invisible">
+
+            As you keep swimming toward the spaceship, you hear some unknown creatures' sound...
+            <br>
+            <br>
+            However, you choose to continuously swimming toward your target and ignore the sound you hear....
+            <br>
+            <br>
+            Because you want to find out if anything on the spaceship can help you escape from Kung-planet88...
+            <br>
+            <br>
+            Please click keeping going in order to continue your journey...
+
+        </h3>
+
+    </div>
+</div>
+
+<div class="bgMusic" style="position: absolute; top: 10px; right: 10px;">
+
+    <h1>
+        BG MUSIC:
+    </h1>
+
+    <label class="switch">
+        <input id="bgm-switch" type="checkbox" onchange="bgm()">
+        <span class="slider round"></span>
+    </label>
+
+</div>
 <script src="js.js"></script>
+
 </body>
 </html>

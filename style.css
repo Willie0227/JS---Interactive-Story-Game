@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', 'Ubuntu Mono', 'Fira Mono', serif;
+}
+
+/*basic setup for all the pages*/
+.container {
+    height: 100vh;
+    background-image: url('images/how-to-get-into-the-aurora-in-subnautica.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: -1;
+}
+
+.title {
+    margin-top: 12vh;
+    font-size: 4em;
+}
+
+.sub-title {
+    /*margin-top: 12vh;*/
+    font-size: 2em;
+
+}
+
+.btn {
+    padding: 20px;
+    background-color: #503AD6;
+    font-size: 26px;
+    color: white;
+    border: none;
+    border-radius: 10px
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.story-intro {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.bgMusic {
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+
+.bgMusic h1 {
+    margin-right: 8px;
+}
+
+#test-area {
+    width: 70vw;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    /*opacity: 0.7;*/
+    margin: auto;
+    text-align: left;
+    color: rgb(2, 40, 90);
+    overflow: auto;
+    font-size: 1.6em;
+}
+
+/*End of basic set up*/
+
+/*Page 1 - common page*/
+
+.story-pg1 {
+
+    margin-top: 30px;
+    text-align: center;
+}
+
+.invisible {
+    visibility: hidden;
+    display: none;
+}
+
+
+/*Swimming toward the Aurora*/
+.story-pg2 {
+
+    margin-top: 30px;
+    text-align: center;
+}
+
+.swimming {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.swimming img {
+
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 60%;
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .title {
+        font-size: 2em;
+    }
+
+    .test-area {
+        width: 80vw;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #b5e3f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0b7a9c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #006888;
+}
