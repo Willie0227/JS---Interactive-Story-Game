@@ -125,7 +125,7 @@ input:checked + .slider:before {
     margin-right: 8px;
 }
 
-.story-pg1, .story-pg2, .story-pg3, .story-pg4{
+.story-pg1, .story-pg2, .story-pg3, .story-pg4, .story-pg1-2, .story-pg1-2-1, .story-pg1-2-2, .story-pg2-1,.story-pg2-1-1,.story-pg2-2, .story-pg5{
 
     margin-top: 30px;
     text-align: center;
@@ -160,13 +160,13 @@ input:checked + .slider:before {
 
 /*Swimming toward the Aurora*/
 
-.swimming, .dying{
+.swimming, .dying, .swimming-2, .hungry, .scanning, .blueprint, .cyclops, .launch{
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.swimming img ,.dying img{
+.swimming img ,.dying img, .swimming-2 img, .hungry img, .scanning img, .blueprint img, .cyclops img, .launch Img{
 
     margin-top: 30px;
     border-radius: 10px;
