@@ -125,12 +125,19 @@ input:checked + .slider:before {
     margin-right: 8px;
 }
 
+.story-pg1, .story-pg2, .story-pg3, .story-pg4{
+
+    margin-top: 30px;
+    text-align: center;
+}
+
+
 #test-area {
     width: 70vw;
     height: 60vh;
     box-sizing: border-box;
     padding: 2em;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     /*opacity: 0.7;*/
     margin: auto;
     text-align: left;
@@ -139,15 +146,11 @@ input:checked + .slider:before {
     font-size: 1.6em;
 }
 
+
 /*End of basic set up*/
 
 /*Page 1 - common page*/
 
-.story-pg1 {
-
-    margin-top: 30px;
-    text-align: center;
-}
 
 .invisible {
     visibility: hidden;
@@ -156,19 +159,14 @@ input:checked + .slider:before {
 
 
 /*Swimming toward the Aurora*/
-.story-pg2 {
 
-    margin-top: 30px;
-    text-align: center;
-}
-
-.swimming {
+.swimming, .dying{
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.swimming img {
+.swimming img ,.dying img{
 
     margin-top: 30px;
     border-radius: 10px;
