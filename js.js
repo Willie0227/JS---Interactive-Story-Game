@@ -144,6 +144,7 @@ function KeepGoingOn() {
 
     clickSound.play()
     reaperSound.play()
+    document.querySelector(".container").style.backgroundImage = "url('images/956004687_preview_20170618222709_1.jpg')"
     document.querySelector(".title").style.backgroundColor = "rgba(255, 255, 255, 0.8)"
     document.querySelector(".sub-title").style.backgroundColor = "rgba(255, 255, 255, 0.8)"
     document.querySelector(".title").style.color = "black"
@@ -163,7 +164,7 @@ function retreatBack() {
     clickSound.play()
     loseSound.play()
     reaperSound.pause()
-    document.querySelector(".container").style.backgroundImage = "url('images/956004687_preview_20170618222709_1.jpg')"
+    document.querySelector(".container").style.backgroundImage = "url('images/7nb3y2tc59e01.jpg')"
     document.querySelector(".title").style.backgroundColor = "unset"
     document.querySelector(".sub-title").style.backgroundColor = "unset"
     document.querySelector(".title").style.color = "white"
@@ -194,9 +195,13 @@ function CollectMaterial() {
     document.querySelector(".scanningImg").classList.add("invisible")
     document.querySelector(".story-pg3").classList.add('invisible')
     document.querySelector(".story-pg5").classList.remove('invisible')
-    document.querySelector(".groupLore5").classList.add('invisible')
-    document.querySelector(".groupLore6").classList.add('invisible')
+    document.querySelector(".groupLore3-2-1").classList.add('invisible')
+    document.querySelector(".groupLore3-2-2").classList.add('invisible')
     document.querySelector(".groupLore7").classList.remove('invisible')
+    document.querySelector(".story-pg1-2-2").classList.add('invisible')
+    document.querySelector(".baseImg").classList.remove('invisible')
+
+
 }
 
 function IgnoreTheCreatureAndGoOn() {
@@ -247,5 +252,7 @@ function ReturnToStart() {
     document.querySelector(".launchImg").classList.add("invisible")
     document.querySelector(".story-pg2-2").classList.add("invisible")
     document.querySelector(".story-pg5").classList.add('invisible')
+    document.querySelector(".baseImg").classList.add('invisible')
+
     wholeBgm.load()
 }

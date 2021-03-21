@@ -160,13 +160,13 @@ input:checked + .slider:before {
 
 /*Swimming toward the Aurora*/
 
-.swimming, .dying, .swimming-2, .hungry, .scanning, .blueprint, .cyclops, .launch{
+.swimming, .dying, .swimming-2, .hungry, .scanning, .blueprint, .cyclops, .launch,.base{
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.swimming img ,.dying img, .swimming-2 img, .hungry img, .scanning img, .blueprint img, .cyclops img, .launch Img{
+.swimming img ,.dying img, .swimming-2 img, .hungry img, .scanning img, .blueprint img, .cyclops img, .launch Img, .base Img{
 
     margin-top: 30px;
     border-radius: 10px;
